@@ -1,0 +1,26 @@
+{
+  "name": "left.gallery.contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle migrate development && truffle tests",
+    "lint": "solium -d contracts/ --fix",
+    "build": "truffle compile",
+    "deploy:ropsten": "truffle migrate --network ropsten",
+    "deploy:main": "truffle migrate --network main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openzeppelin-solidity": "1.12.0",
+    "truffle-hdwallet-provider": "0.0.6"
+  },
+  "devDependencies": {
+    "solium": "^1.1.8"
+  }
+}
