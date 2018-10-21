@@ -1,6 +1,6 @@
 const HDWalletProvider = require("truffle-hdwallet-provider");
 var NonceTrackerSubprovider = require("web3-provider-engine/subproviders/nonce-tracker")
-const INFURA_APIKEY = require(./infura-key);
+const INFURA_APIKEY = require("./infura-key");
 const mnemonic = require("./mnemonic")
 
 module.exports = {
